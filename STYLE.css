@@ -1,0 +1,566 @@
+/*General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  line-height: 1.2;
+  font-size: 0.87rem;
+  color: antiquewhite;
+}
+ul {
+  list-style-type: none;
+}
+ 
+a {
+  text-decoration: none;
+}
+ 
+nav {
+  background-color: transparent;
+}
+ 
+.menu-icon{
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+}
+ 
+.menu-icon:hover {
+  color: #f9004d;
+}
+ 
+.menu a {
+  color: white;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  font-weight: 700;
+}
+ 
+.menu a:hover {
+  color: #0056bd;
+  padding-left: 1.5rem;
+}
+ 
+.menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-menu{
+  height: 15rem;
+  
+}
+.menu a.active {
+  color: #0056b3; /* Change this color to the desired active link color */
+}
+ 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+ 
+.nav-header img {
+  width: 100px;
+}
+ 
+@media (min-width: 800px) {
+  /* Corrected the syntax here */
+  .main-nav {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .nav-header {
+    padding: 0;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    height: auto;
+  }
+  .menu a{
+    padding: 0;
+    margin: 0 .5rem;
+  }
+  .menu a:hover{
+    padding: 0;
+    background: transparent;
+  }
+}
+
+
+
+
+/*.navbar ul{
+  list-style: armenian;
+ 
+  text-decoration: none;
+}
+
+.navbar li{
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar a{
+  display: block;
+  color:rgb(43, 226, 83);
+  display: block;
+  padding: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}*/
+dd {
+  color:lime;
+}
+dt {
+  color: white;
+}
+
+.navbar a:hover{
+  background: #1f3643;
+  text-decoration: none;
+}
+.navbar {
+  text-align: right;
+
+}
+/*Header & Footerter*/
+
+header{
+  background-color: #0056b3;
+  padding: 10px 0;
+  top: 5px;
+  /*position: fixed;*/
+}
+
+.footer {
+  background-color: rgb(79, 127, 182);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: -1%;
+  width: 100%;
+  margin: 3px;
+ } 
+ h1, h2 {
+  text-align: center;
+  color: whitesmoke;
+ }
+ body { 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-bottom: 5px;
+ }
+
+ video {
+  position: sticky;
+
+ }
+ img.lessBright {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+  }
+  ul {
+       color: lime;
+  }
+  .contact{
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+background-color: #f9004d;
+position: relative;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+color: white;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 13px 30px;
+border-radius: 30px;
+transition: .4s;
+bottom: 5px;
+
+  }
+  button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+ 
+.logo {
+  position: absolute;
+  height: auto;
+  left: 0px;
+  width: 170px;
+}
+
+.service img {
+ position: relative;
+ height: 600px;
+ width: 600px;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b {
+  width: 200px;
+  height: 200px;
+  border: none;
+  padding: 20px;
+}
+
+.register {
+  background-color: transparent;
+  margin-left: 50px;
+}
+
+.login {
+  background-color: transparent;
+  margin-right: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f9004d;
+}
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.container h2 {
+  color: #f9004d;
+}
+.container3 {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color:transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #f9004d;
+}
+
+.booking-form {
+  
+  flex-direction: row;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  
+}
+.form-button {
+  position: relative;
+  display: flex;
+}
+
+button {
+  background-color: #f9004d;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+  
+  
+    }
+  button:hover {
+      background-color: transparent;
+      border: 2px solid #f9004d;
+        cursor: pointer;
+      }
+       button {
+        background-color: #f9004d;
+        margin-top: 20px;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        display: inline;
+        
+          }
+         button:hover {
+            background-color: transparent;
+            border: 2px solid #f9004d;
+              cursor: pointer;
+            }
+            .service {
+              display: flex;
+              justify-content: space-between;
+            }
+            
+            .c {
+              width: 200px;
+              height: 200px;
+              border: none;
+              padding: 20px;
+            }
+            
+            .section {
+              position: relative;
+              height: 600px;
+              width: 600px
+            }
+            
+            .image {
+              background-color: transparent;
+              margin-right: 650px;
+            }
+
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.bd {
+  background-size: cover;
+}
+.abp p {
+  text-align: center;
+  color: #f9004d;
+}
+ figcaption {
+  color: #f9004d;
+}
+.image-container{
+  display: inline-block;
+  margin: 15px;
+}
+form{
+  max-width:600px;
+  margin:0 auto;
+}
+
+.b-login{
+  max-width:600px;
+  margin:0 auto;
+  align-items: center;
+
+}
+.popup { display: none;
+   position: fixed; 
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   background-color: white; 
+   padding: 20px; border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   } /* Style for the overlay */ 
+   .overlay { display: none;
+     position: fixed; 
+     top: 0; 
+     left: 0;
+      width: 100%;
+  height: 100%; 
+  background-color:
+     rgba(0, 0, 0, 0.5); z-index: 1; }
+
+
+     .inner-container{
+      width: 55%;
+      float: right;
+      background-color: #fdfdfd;
+      padding: 150px;
+  }
+  
+  .inner-container h1{
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 900;
+  }
+  /* I've Updated from below this point*/
+
+  #main{
+  font-size: 16px;
+  font-family: "Open Sans",Arial,sans-serif;
+  font-style: normal;
+  color: #252930;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5rem;
+  font-weight: 400;
+  box-sizing: inherit;
+  }
+
+  .container{
+    font-size: 16px;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-style: normal;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #252930;
+    box-sizing: inherit;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 768px;
+  }
+
+  .section-component__container {
+    font-size: 16px;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-style: normal;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #252930;
+    box-sizing: inherit;
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid #d3d3db;
+  }
+
+  .section-component {
+    font-size: 16px;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-style: normal;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5rem;
+    font-weight: 400;
+    box-sizing: inherit;
+    color: #252930;
+    scroll-margin-top: 115px;
+  }
+  
+#about-page {
+  max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Style for the mission section */
+.mission-section {
+  padding: 3rem 0;
+  background-color: transparent;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  color:lime;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scroll-up-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-up-button.active {
+  display: block;
+}
+.mission-section p{
+  color:lime;
+  justify-content: center;
+
+}
+.mission-section h2{
+  color: whitesmoke;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  justify-items: right;
+}
+
+/* Style your buttons and forms as needed */
+.btn {
+  padding: 15px 20px;
+  font-weight: 500 ;
+  color: #ccc;
+  bottom: .003rem;
+  margin-right: 3rm;
+  border: none;
+  cursor: pointer;
+}
+/* Add additional styling if necessary */
+
+
+
+
+
+
+
+
+  
